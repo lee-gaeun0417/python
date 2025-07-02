@@ -222,7 +222,6 @@ def game_main():
 
     elif index == 4:
         sc = sweep_neko()
-        # 1턴이 지난 조커 블럭을 랜덤 블럭으로 변환
         for pos in joker_positions:
             y, x = pos
             if neko[y][x] == 7:
@@ -232,7 +231,7 @@ def game_main():
         if sc >= 10:
             score += (sc // 10) * 10
         if score > hisc:
-            hisc = score
+            hisc = score 
         if sc > 0:
             index = 2
         else:
